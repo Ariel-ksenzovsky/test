@@ -1,6 +1,3 @@
-Here’s the entire content formatted in Markdown for your **README.md**:
-
-```markdown
 # Flask Catexer App with GitHub Actions
 
 This repository contains a Flask-based application integrated with GitHub Actions for CI/CD automation.
