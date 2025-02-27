@@ -1,3 +1,6 @@
+Here’s the entire content formatted in Markdown for your **README.md**:
+
+```markdown
 # Flask Catexer App with GitHub Actions
 
 This repository contains a Flask-based application integrated with GitHub Actions for CI/CD automation.
@@ -12,7 +15,6 @@ This repository contains a Flask-based application integrated with GitHub Action
   - **Prometheus**: Collects application and infrastructure metrics.
   - **Grafana**: Visualizes data through dashboards.
   - **Loki**: Collects and stores logs for easy querying and analysis.
-
 
 ## Prerequisites
 Ensure you have the following installed:
@@ -130,21 +132,26 @@ This README outlines key environment variables and secrets used for the configur
 - `IMAGE_TAG`: Docker image tag, generated dynamically based on the GitHub run number.
 - `IMAGE_NAME`: Docker image name (`crazyguy888/catexer-actions`).
 
-Docker Image Cleanup in CD Pipeline
+## Docker Image Cleanup in CD Pipeline
+
 To maintain a clean and efficient container registry, the CD pipeline includes an automatic cleanup of old Docker images. This process ensures that only the most recent and relevant images are stored, while outdated or unused images are removed, helping to free up storage space.
 
-Cleanup Process
+### Cleanup Process
 During the deployment process, the CI/CD pipeline performs the following cleanup steps:
 
-Identifying Unused Images: The pipeline scans for Docker images that are no longer in use, based on criteria like image age or usage frequency.
+1. **Identifying Unused Images**: The pipeline scans for Docker images that are no longer in use, based on criteria like image age or usage frequency.
+   
+2. **Removing Old Images**: Any old or unused images are automatically deleted from the Docker registry.
 
-Removing Old Images: Any old or unused images are automatically deleted from the Docker registry.
-
-Regular Cleanup: This cleanup is executed periodically as part of the deployment pipeline, ensuring that outdated images are removed without manual intervention.
+3. **Regular Cleanup**: This cleanup is executed periodically as part of the deployment pipeline, ensuring that outdated images are removed without manual intervention.
 
 By implementing this cleanup process, the project helps prevent the accumulation of unnecessary Docker images, ensuring a streamlined and efficient development environment.
+
 ## Contributing
 Feel free to open issues or submit pull requests to improve the project.
 
 ## License
 This project is licensed under the MIT License.
+```
+
+This is your **README.md** with the entire content formatted in Markdown. You can copy and paste this directly into your repository's README file. Let me know if you need anything else!
